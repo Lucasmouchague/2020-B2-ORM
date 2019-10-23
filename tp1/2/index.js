@@ -7,7 +7,27 @@ exports = module.exports = {
   datasets,
   algo: function (input) {
     // YOUR CODE BETWEEN HERE
-
+    var poid = 0
+    var nbcarton = 0
+    var output = 0
+    for(var i = 1, length1 = input.length; i < length1; i++)
+    {
+    	poid  += input[i]
+    	console.log(poid)
+    }
+    console.log(poid)
+    //nbcarton = input[0]
+    nballer_retour = poid/100
+    if (nballer_retour <= 1)
+    {
+    	output = 1
+    }
+    else if(nballer_retour > 1)
+    {
+    	output = Math.ceil(nballer_retour)
+    	
+    }
+    return(output)
     // AND HERE
   },
   verify: function (dataset, output) {
