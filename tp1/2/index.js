@@ -13,10 +13,10 @@ exports = module.exports = {
     for(var i = 1, length1 = input.length; i < length1; i++)
     {
     	poid  += input[i]
-    	console.log(poid)
+    	//console.log(poid)
     }
-    console.log(poid)
-    //nbcarton = input[0]
+    //console.log(poid)
+    nbcarton = input[0]
     nballer_retour = poid/100
     if (nballer_retour <= 1)
     {
